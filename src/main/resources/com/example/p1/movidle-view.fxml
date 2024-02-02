@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" style="-fx-background-color: #F5CBA7;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.p1.Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="187.0" layoutY="-8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="108.0" prefWidth="328.0" text="MOVIDLE" textFill="#781122">
+         <font>
+            <Font name="Times New Roman" size="53.0" />
+         </font>
+      </Label>
+      <Button layoutX="440.0" layoutY="88.0" mnemonicParsing="false" onAction="#checkGuess" prefHeight="43.0" prefWidth="110.0" text="Guess!" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font></Button>
+      <TextField fx:id="guessInput" layoutX="151.0" layoutY="88.0" prefHeight="43.0" prefWidth="269.0" />
+      <Button layoutX="599.0" layoutY="14.0" mnemonicParsing="false" onAction="#Restart" prefHeight="32.0" prefWidth="79.0" text="Restart">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="l1" layoutX="27.0" layoutY="161.0" prefHeight="43.0" prefWidth="42.0" text="Guess 1" visible="false">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="l2" layoutX="27.0" layoutY="240.0" prefHeight="43.0" prefWidth="42.0" text="Guess 2" visible="false">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="l3" layoutX="27.0" layoutY="317.0" prefHeight="43.0" prefWidth="42.0" text="Guess 3" visible="false">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="l4" layoutX="27.0" layoutY="391.0" prefHeight="43.0" prefWidth="42.0" text="Guess 4" visible="false">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="l5" layoutX="27.0" layoutY="466.0" prefHeight="43.0" prefWidth="42.0" text="Guess 5" visible="false">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Label>
+      <HBox layoutX="80.0" layoutY="149.0" mouseTransparent="true" prefHeight="62.0" prefWidth="606.0">
+         <children>
+            <Label fx:id="guess00" alignment="CENTER" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="CENTER" visible="false">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="guess01" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="CENTER" visible="false">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="guess02" alignment="CENTER" layoutX="100.0" layoutY="10.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="CENTER" visible="false">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="guess03" alignment="CENTER" layoutX="191.0" layoutY="10.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="CENTER" visible="false">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="guess04" alignment="CENTER" layoutX="281.0" layoutY="10.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="CENTER" visible="false">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="guess05" alignment="CENTER" layoutX="372.0" layoutY="10.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="CENTER" visible="false">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox fx:id="HBox11" layoutX="79.0" layoutY="230.0" mouseTransparent="true" prefHeight="62.0" prefWidth="606.0">
+         <children>
+            <Label fx:id="guess10" alignment="CENTER" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess11" alignment="CENTER" layoutX="11.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess12" alignment="CENTER" layoutX="101.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess13" alignment="CENTER" layoutX="192.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess14" alignment="CENTER" layoutX="282.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess15" alignment="CENTER" layoutX="372.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox fx:id="HBox111" layoutX="80.0" layoutY="307.0" mouseTransparent="true" prefHeight="62.0" prefWidth="606.0">
+         <children>
+            <Label fx:id="guess20" alignment="CENTER" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess21" alignment="CENTER" layoutX="11.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess22" alignment="CENTER" layoutX="101.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess23" alignment="CENTER" layoutX="192.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess24" alignment="CENTER" layoutX="282.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess25" alignment="CENTER" layoutX="372.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox fx:id="HBox112" layoutX="80.0" layoutY="382.0" mouseTransparent="true" prefHeight="62.0" prefWidth="606.0">
+         <children>
+            <Label fx:id="guess30" alignment="CENTER" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess31" alignment="CENTER" layoutX="11.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess32" alignment="CENTER" layoutX="101.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess33" alignment="CENTER" layoutX="192.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess34" alignment="CENTER" layoutX="282.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess35" alignment="CENTER" layoutX="372.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox fx:id="HBox113" layoutX="80.0" layoutY="456.0" mouseTransparent="true" prefHeight="62.0" prefWidth="606.0">
+         <children>
+            <Label fx:id="guess40" alignment="CENTER" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess41" alignment="CENTER" layoutX="11.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess42" alignment="CENTER" layoutX="101.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess43" alignment="CENTER" layoutX="192.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess44" alignment="CENTER" layoutX="282.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="guess45" alignment="CENTER" layoutX="372.0" layoutY="11.0" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: black;" textAlignment="RIGHT" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</Pane>
